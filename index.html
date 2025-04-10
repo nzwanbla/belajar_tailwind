@@ -7,76 +7,74 @@
     <title>Belajar Tailwind</title>
     <link rel="stylesheet" href="./style/output.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
 </head>
 
 <body class="px-16 font-poppins">
 
-    <header class="flex flex-col md:flex-row md:justify-between md:items-center gap-4 md:gap-0 border-b border-gray-200 py-0">
-        <div class="w-[150px]">
-            <img src="./image/Logo.png" alt="" class="w-full h-full object-contain"">
-        </div>
+    <!-- Header -->
+  <header class="flex flex-col md:flex-row md:justify-between md:items-center gap-4 border-b border-gray-200 py-0 px-4 md:px-16">
+    <div class="w-[150px]">
+      <img src="./image/Logo.png" alt="" class="w-full h-full object-contain">
+    </div>
 
-        <ul class="relative flex items-center gap-6">
-            <li class="relative py-4 group">
-                <a class="group-hover:text-accent group-hover:font-bold" href="">Home</a>
-                <span class="absolute left-0 bottom-0 w-0 h-1 bg-accent group-hover:w-full transition-all duration-300"></span>
-            </li>
-            <li class="relative py-4 group">
-                <a class="group-hover:text-accent group-hover:font-bold" href="">Shop</a>
-                <span class="absolute left-0 bottom-0 w-0 h-1 bg-accent group-hover:w-full transition-all duration-300"></span>
-            </li>
-            <li class="relative py-4 group">
-                <a class="group-hover:text-accent group-hover:font-bold" href="">Plant Care</a>
-                <span class="absolute left-0 bottom-0 w-0 h-1 bg-accent group-hover:w-full transition-all duration-300"></span>
-            </li>
-            <li class="relative py-4 group">
-                <a class="group-hover:text-accent group-hover:font-bold" href="">Blogs</a>
-                <span class="absolute left-0 bottom-0 w-0 h-1 bg-accent group-hover:w-full transition-all duration-300"></span>
-            </li>
-        </ul>
+    <ul class="flex flex-wrap justify-center md:justify-start items-center gap-4 text-sm">
+        <li class="relative py-5 group">
+          <a class="group-hover:text-accent group-hover:font-bold" href="">Home</a>
+          <span class="absolute left-0 bottom-0 w-0 h-1 bg-accent group-hover:w-full transition-all duration-300"></span>
+        </li>
+        <li class="relative py-5 group">
+          <a class="group-hover:text-accent group-hover:font-bold" href="">Shop</a>
+          <span class="absolute left-0 bottom-0 w-0 h-1 bg-accent group-hover:w-full transition-all duration-300"></span>
+        </li>
+        <li class="relative py-5 group">
+          <a class="group-hover:text-accent group-hover:font-bold" href="">Plant Care</a>
+          <span class="absolute left-0 bottom-0 w-0 h-1 bg-accent group-hover:w-full transition-all duration-300"></span>
+        </li>
+        <li class="relative py-5 group">
+          <a class="group-hover:text-accent group-hover:font-bold" href="">Blogs</a>
+          <span class="absolute left-0 bottom-0 w-0 h-1 bg-accent group-hover:w-full transition-all duration-300"></span>
+        </li>
+      </ul>
 
-        <div class="flex gap-6 items-center">
-            <span class="material-symbols-outlined cursor-pointer hover:text-accent transition">search</span>
-            <div class="relative">
-                <span class="material-symbols-outlined cursor-pointer text-2xl">shopping_cart</span>
-                <span class="absolute -top-1 -right-2 bg-accent text-white text-xs rounded-full px-1.5">
-                    6
-                </span>
-            </div>            
-            <button class="flex gap-2 items-center bg-accent py-2 px-4 text-white rounded-md hover:bg-green-700 transition">
-                <span class="material-symbols-outlined">login</span>
-                Login
-            </button>            
+      <div class="flex gap-4 items-center justify-center md:justify-end">
+        <span class="material-symbols-outlined cursor-pointer hover:text-accent transition">search</span>
+        <div class="relative">
+          <span class="material-symbols-outlined cursor-pointer text-2xl">shopping_cart</span>
+          <span class="absolute -top-1 -right-2 bg-accent text-white text-xs rounded-full px-1.5">6</span>
         </div>
+        <button class="flex gap-2 items-center bg-accent py-2 px-4 text-white rounded-md hover:bg-green-700 transition">
+          <span class="material-symbols-outlined">login</span>
+          Login
+        </button>
+      </div>
     </header>
 
-    <section class="py-7">
-        <div class="flex justify-between items-center bg-[#f4f4f4] p-10 shadow-md">
-            <div class="max-w-xl">
-            <p class="text-black/80 uppercase tracking-wider">Welcome to Greenshop</p>
-            <h1 class="text-6xl font-bold leading-tight mt-1">
-                <span class="text-black/80">LET’S MAKE A</span> <br>
-                <span class="text-black/80">BETTER </span><span class="text-accent font-bold">PLANET</span>
-            </h1>
-            <p class="mt-2 text-gray-500 text-[14.5px] leading-relaxed max-w-[620px]">We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</p>
-            <button class="mt-11 bg-accent text-white px-6 py-2 rounded-md font-medium hover:bg-green-700 transition">SHOP NOW</button>
-            </div>
-
-            <div class="flex gap-6 items-end">
-                <img src="./image/plant.png" alt="Plant" class="w-96 h-auto">
-            </div>
-        </div>
-    </section>
+    <!-- Hero Section -->
+  <section class="py-7 px-4 md:px-16">
+    <div class="flex flex-col md:flex-row justify-between items-center bg-[#f4f4f4] p-6 md:p-10 shadow-md gap-6">
+      <div class="max-w-xl">
+        <p class="text-black/80 uppercase tracking-wider text-sm">Welcome to Greenshop</p>
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight mt-1">
+          <span class="text-black/80">LET’S MAKE A</span><br>
+          <span class="text-black/80">BETTER </span><span class="text-accent font-bold">PLANET</span>
+        </h1>
+        <p class="mt-2 text-gray-500 text-sm leading-relaxed max-w-[620px]">We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</p>
+        <button class="mt-8 bg-accent text-white px-6 py-2 rounded-md font-medium hover:bg-green-700 transition">SHOP NOW</button>
+      </div>
+      <div class="flex justify-center">
+        <img src="./image/plant.png" alt="Plant" class="w-64 md:w-96 h-auto">
+      </div>
+    </div>
+  </section>
 
     <!-- Tabs + Sort -->
-  <div class="flex justify-between items-center mt-12 mb-6 px-4">
-    <div class="flex gap-6 border-b border-white">
-        <button class="pb-2 border-b-2 border-green-600 text-green-600 font-medium">All Plants</button>
-        <button class="pb-2 border-b-2 border-transparent hover:text-green-600">New Arrival</button>
-        <button class="pb-2 border-b-2 border-transparent hover:text-green-600">Sale</button>
-      </div>      
+  <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 mt-12 mb-6 px-4 md:px-16">
+    <div class="flex gap-6 border-b border-white justify-center sm:justify-start">
+      <button class="pb-2 border-b-2 border-green-600 text-green-600 font-medium">All Plants</button>
+      <button class="pb-2 border-b-2 border-transparent hover:text-green-600">New Arrival</button>
+      <button class="pb-2 border-b-2 border-transparent hover:text-green-600">Sale</button>
+    </div>
     <div class="text-sm text-gray-700">
       Sort by:
       <select class="ml-2 border rounded px-2 py-1 text-gray-700">
@@ -88,7 +86,7 @@
   </div>
   
   <!-- Product Grid -->
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4">
+  <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4 md:px-16">
     <!-- Product Card 1 -->
     <div class="bg-white p-4 shadow rounded text-center">
       <img src="./image/plant1.png" alt="Barberton Daisy" class="h-40 mx-auto mb-3" />
@@ -151,7 +149,7 @@
   </div>
 
     <!-- Pagination -->
-   <div class="flex justify-center mt-10 mb-20 space-x-2 text-sm">
+    <div class="flex justify-center mt-10 mb-20 space-x-2 text-sm">
     <button class="w-8 h-8 flex items-center justify-center border border-gray-300 text-white font-semibold rounded bg-accent">
       1
     </button>
@@ -170,7 +168,7 @@
   </div>
 
   <!-- Promo Banners -->
-  <div class="mt-16 px-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+  <div class="mt-16 px-4 md:px-16 grid grid-cols-1 md:grid-cols-2 gap-6">
     <!-- Banner 1 -->
     <div class="flex items-center bg-white p-6 shadow-md">
       <img src="./image/plant9.png" alt="Summer Cactus" class="w-72 h-auto">
@@ -193,7 +191,7 @@
   </div>
 
   <!-- Footer -->
-  <footer class="bg-green-50 mt-16 py-6 px-4">
+  <footer class="bg-green-50 mt-16 py-6 px-4 md:px-16">
     <div class="flex flex-col md:flex-row items-center justify-between text-sm text-gray-700 space-y-4 md:space-y-0">
       <!-- Logo & Address -->
         <div class="w-[150px]">
